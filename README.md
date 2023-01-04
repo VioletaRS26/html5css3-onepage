@@ -1,4 +1,4 @@
-# html5css3-onepage
+# html5css3-one page
 Site criado com finalidades educacionais para ensinar HTML5, CSS3 e JavaScript, três tecnologias fundamentais da WEB.
 ## link úteis
 ### Planejamento
