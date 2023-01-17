@@ -11,7 +11,28 @@ body {
 
 .container {
   margin: 0 auto;
-  background-color: chartreuse;
+  background-color: beige;
+}
+
+.Flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgrey;
+}
+
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+header {
+  height: 60px;
+}
+
+#logo img {
+  width: 128px;
+  height: 128px;
 }
 
 @media (min-width: 576px) {
@@ -44,5 +65,13 @@ body {
   }
   .container {
     max-width: 1140px;
+  }
+  header {
+    height: 120px;
+  }
+  #logo img {
+    width: 189px;
+    height: 189px;
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
