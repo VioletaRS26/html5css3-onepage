@@ -19,6 +19,16 @@ body{
     justify-content: space-between;
 
 }
+.Botao{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
 
 //topo do site
 #topo{
@@ -69,11 +79,32 @@ nav{
 #check:checked ~ ul{
     right: 0;
 }
+//Destaque
+main{
+    height: 70vh;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1em;
+        margin: 20px 0px 50px 0px;
+    }
+}
 // Smartphone Landscape
 @media (min-width: 576px){
     
     .container{
         max-width: 540px;
+    }
+    main h1, main h2{
+        text-shadow: #000000 0.05em 0.05em 0.05em;
     }
 }
 
@@ -83,6 +114,16 @@ nav{
     .container{
         max-width: 720px;
     }
+    //Destaque
+    main{
+        height: 45vh;
+        h1{
+            font-size: 5.5em;
+        }
+        h2{
+            font-size: 2em;
+        }
+    }
 }
 
 //Tablet Landscape
@@ -90,6 +131,9 @@ nav{
     
     .container{
         max-width: 960px;
+    }
+    main{
+        height: 70vh;
     }
 }
 //Desktop
@@ -128,5 +172,8 @@ nav{
                 }
             }
         }
+    }
+    main{
+        height: 70vh;
     }
 }
