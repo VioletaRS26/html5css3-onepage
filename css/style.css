@@ -11,13 +11,11 @@ body {
 
 .container {
   margin: 0 auto;
-  background-color: beige;
 }
 
 .Flex {
   display: flex;
   justify-content: space-between;
-  background-color: darkgrey;
 }
 
 #topo {
@@ -51,6 +49,7 @@ nav ul {
   position: fixed;
   top: 60px;
   right: -100%;
+  transition: all 0.5s;
 }
 nav ul li {
   padding: 20px;
@@ -87,9 +86,28 @@ nav ul li a {
   header {
     height: 120px;
   }
+  header label {
+    display: none;
+  }
   #logo img {
     width: 189px;
     height: 189px;
     margin-top: 30px;
+  }
+  nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 50px;
+  }
+  nav ul li {
+    float: left;
+    border: 0;
+  }
+  nav ul li a {
+    color: #343538;
+  }
+  nav ul li a:hover {
+    color: aqua;
   }
 }/*# sourceMappingURL=style.css.map */

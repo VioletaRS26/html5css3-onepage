@@ -13,12 +13,11 @@ body{
 //Layout
 .container{
     margin: 0 auto;
-    background-color:beige;
 }
 .Flex{
     display: flex;
     justify-content: space-between;
-    background-color: darkgrey;
+
 }
 
 //topo do site
@@ -56,6 +55,7 @@ nav{
         position: fixed;
         top: 60px;
         right: -100%;
+        transition: all 0.5s;
         li{
             padding: 20px;
             border-bottom: 1px solid #a9a9a9;
@@ -100,12 +100,33 @@ nav{
     }
     header{
         height: 120px;
+        label{
+            display: none;
+        }
     }
     #logo{
         img{
             width: 189px;
             height: 189px;
             margin-top: 30px;
+        }
+    }
+    nav{
+        ul{
+            position: static;
+            height: auto;
+            background-color: transparent;
+            margin-top: 50px;
+            li{
+                float: left;
+                border: 0;
+                a{
+                    color: #343538;
+                }
+                a:hover{
+                    color: aqua;
+                }
+            }
         }
     }
 }
