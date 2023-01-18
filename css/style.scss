@@ -4,6 +4,10 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -22,6 +26,10 @@ body{
 .Flex2{
     display: flex;
     align-items: center;
+}
+.Flex3{
+    display: flex;
+    flex-direction: column;
 }
 .Botao{
     text-decoration: none;
@@ -59,7 +67,10 @@ header{
 
 label{
     font-size: 3em;
-    padding-right: 15px;
+    position: fixed;
+    right: 15px;
+    top: 5px;
+    color: rgba(0, 0, 0, 0.5);
 }
 nav{
     ul{
@@ -88,6 +99,7 @@ main{
     height: 70vh;
     background: url(../img/banner.jpg);
     background-size: cover;
+    background-position: center;
     color: white;
     display: flex;
     flex-direction: column;
@@ -106,6 +118,8 @@ main{
     padding: 50px 0px;
     background: url(../img/background.png);
     background-size: cover;
+    background-position: center;
+
 
 }
 #destaqueSobre{
@@ -118,6 +132,23 @@ main{
     h2{
         margin-bottom: 10px;
     }
+    .topicosSobre{
+        margin-top: 20px;
+    }
+}
+//One Page
+#onepage{
+    padding: 50px 10px;
+    h2{
+        margin-bottom: 10px;
+    }
+    p{
+        margin-bottom: 25px;
+    }
+}
+#video iframe{
+    width: 340px;
+    height: 191px;
 }
 
 // Smartphone Landscape
@@ -128,6 +159,10 @@ main{
     }
     main h1, main h2{
         text-shadow: #000000 0.05em 0.05em 0.05em;
+    }
+    #video iframe{
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -167,16 +202,17 @@ main{
     }
     header{
         height: 120px;
-        label{
-            display: none;
-        }
     }
+
     #logo{
         img{
             width: 189px;
             height: 189px;
             margin-top: 30px;
         }
+    }
+    label{
+        display: none;
     }
     nav{
         ul{
@@ -198,5 +234,21 @@ main{
     }
     main{
         height: 70vh;
+    }
+    //Sobre
+    #sobre{
+        background-attachment: fixed;
+    }
+    #destaqueSobre{
+        display: inline;
+        img{
+            border-radius: 50%;
+            margin-right: 50px;
+        }
+    }
+    //One Page
+    .Flex3{
+        flex-direction: row;
+        align-items: center;
     }
 }
