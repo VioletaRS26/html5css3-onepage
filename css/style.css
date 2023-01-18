@@ -18,6 +18,11 @@ body {
   justify-content: space-between;
 }
 
+.Flex2 {
+  display: flex;
+  align-items: center;
+}
+
 .Botao {
   text-decoration: none;
   color: white;
@@ -91,6 +96,24 @@ main h1 {
 main h2 {
   font-size: 1em;
   margin: 20px 0px 50px 0px;
+}
+
+#sobre {
+  padding: 50px 0px;
+  background: url(../img/background.png);
+  background-size: cover;
+}
+
+#destaqueSobre {
+  display: none;
+}
+
+#textoSobre {
+  color: white;
+  padding: 0px 10px;
+}
+#textoSobre h2 {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 576px) {

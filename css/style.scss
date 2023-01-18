@@ -19,6 +19,10 @@ body{
     justify-content: space-between;
 
 }
+.Flex2{
+    display: flex;
+    align-items: center;
+}
 .Botao{
     text-decoration: none;
     color: #ffff;
@@ -97,6 +101,25 @@ main{
         margin: 20px 0px 50px 0px;
     }
 }
+//Sobre
+#sobre{
+    padding: 50px 0px;
+    background: url(../img/background.png);
+    background-size: cover;
+
+}
+#destaqueSobre{
+    display: none;
+}
+#textoSobre{
+    color: #ffff;
+    padding: 0px 10px;
+
+    h2{
+        margin-bottom: 10px;
+    }
+}
+
 // Smartphone Landscape
 @media (min-width: 576px){
     
